@@ -9,9 +9,9 @@ public class Conexion {
     
       Connection con;
    public Connection getConnection(){
-       String url="jdbc:as400://192.168.1.105/LIBPRDDAT";
-       String user="RRAMOS";
-       String pass="J0AQU1N";
+       String url="jdbc:as400://IP/LIBT";
+       String user="USUARIO";
+       String pass="CLAVE";
        try{
        Class.forName("com.ibm.as400.access.AS400JDBCDriver");
        con=DriverManager.getConnection(url, user, pass);
